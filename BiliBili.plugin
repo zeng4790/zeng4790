@@ -1,5 +1,4 @@
 
-[Script]
 
 # ======= BiliJson 播放页处理 ======= #
 # ～ BiliBili_哔哩哔哩_视频播放下方商品推广@ddgksf2013
@@ -64,7 +63,5 @@ http-response ^https?:\/\/(app\.bilibili\.com|grpc\.biliapi\.net)\/bilibili\.app
 # ～ BiliBili_哔哩哔哩_繁体CC字幕转中文简体[自行启用］
 http-response ^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_cc.js , requires-body=true, timeout=10, tag=bili-简繁体
 # ～ BiliBili_哔哩哔哩_去除统一设置的皮肤[注释留存]@ddgksf2013
-http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js , requires-body=true, timeout=10, tag=去除统一设置的皮肤
-[Mitm]
+http-response ^https?:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\? script-path=https://github.com/ddgksf2013/Scripts/raw/master/bilibili_json.js , requires-body=true, timeout=10, tag=去除统一设置的皮
 
-hostname = -broadcast.chat.bilibili.com, -*cdn*.biliapi.net, -*tracker*.biliapi.net, app.bilibili.com, api.live.bilibili.com, *.bilibili.com, *.bilibili.*, grpc.biliapi.net,*biliapi.net, aisubtitle.hdslb.com,i0.hdslb.com
